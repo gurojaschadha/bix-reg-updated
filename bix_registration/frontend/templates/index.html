@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boat Registration</title>
+    <style>
+        /* Header Styles */
+        body {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-family: "Courier New", monospace;
+        }
+
+        /* Form Styles */
+        form {
+            background-color: #000;
+            border: 2px solid #000;
+            border-left: 10px solid grey; /* Grey border on the left side */
+            border-right: 10px solid grey; /* Grey border on the right side */
+            color: white;
+            width: 60%;
+            margin: 0 auto; /* Center the form horizontally */
+            padding: 20px;
+            font-family: "Courier New", monospace;
+        }
+
+        /* Label Styles */
+        label {
+            display: block;
+            margin: 10px 0; /* Add equal margin on top and bottom */
+        }
+
+        /* Input Styles */
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0; /* Add equal margin on top and bottom */
+            background-color: #333;
+            color: white;
+            border: 1px solid #444;
+            font-family: "Courier New", monospace;
+            box-sizing: border-box; /* Include padding and border in element's total width */
+        }
+
+        /* Submit Button Styles */
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-family: "Courier New", monospace;
+        }
+
+        /* Header Styles for Title */
+        h1 {
+            background-color: grey;
+            padding: 10px;
+            color: #000; /* Text color for the header */
+        }
+    </style>
+</head>
+<body>
+    <h1>Boat Registration</h1>
+    <form method="POST">
+        <label for="bix_id">BIX ID:</label>
+        <input type="text" name="bix_id" required>
+
+        <label for="license_number">License Number:</label>
+        <input type="text" name="license_number" required>
+
+        <label for="aadhar_number">Aadhar Number:</label>
+        <input type="text" name="aadhar_number" required>
+
+        <label for="duration">Duration (time):</label>
+        <input type="text" name="duration" required>
+
+        <label for="boat_type">Boat Type:</label>
+        <input type="text" name="boat_type" required>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
